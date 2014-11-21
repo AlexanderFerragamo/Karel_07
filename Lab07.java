@@ -1,8 +1,6 @@
-  	//Torbert, e-mail: smtorbert@fcps.edu
-	//version 4.22.2003
-
-   import edu.fcps.karel2.Display;
-   import javax.swing.JOptionPane;
+import edu.fcps.karel2.Display;
+import javax.swing.JOptionPane;
+import edu.fcps.karel2.Robot;
     public class Lab07
    {
        public static void main(String[] args) 
@@ -18,7 +16,7 @@
       
          if(type.equals("Climber"))
          {
-            Mountain.explore( new Climber(x) );
+            Mountain.explore( new Climber() );
          }
          else if(type.equals("HillClimber"))
          {
